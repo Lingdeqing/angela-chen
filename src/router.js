@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import index from "./views/index.vue";
+import form from "./views/form.vue";
 
 Vue.use(Router);
 
@@ -15,6 +16,10 @@ export default new Router({
     {
       path: "/index",
       component: index
+    },
+    {
+      path: "/form",
+      component: form
     },
     {
       path: "/about",
