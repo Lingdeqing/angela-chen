@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import index from "./views/index.vue";
 import form from "./views/form.vue";
+import TableHover from "./views/TableHover.vue";
 
 Vue.use(Router);
 
@@ -16,6 +17,10 @@ export default new Router({
     {
       path: "/index",
       component: index
+    },
+    {
+      path: "/table-hover",
+      component: TableHover
     },
     {
       path: "/form",
