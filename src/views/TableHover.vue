@@ -1,5 +1,5 @@
 <template>
-  <el-table :data="tableData" style="width: 100%">
+  <el-table :data="tableData" style="width: 100%" class="hover-table">
     <el-table-column prop="date" label="日期"> </el-table-column>
     <el-table-column prop="name" label="姓名"> </el-table-column>
     <el-table-column prop="address" label="地址"></el-table-column>
@@ -60,6 +60,11 @@
       background: white;
       color: red;
     }
+  }
+}
+.hover-table {
+  .el-table__row {
+    cursor: pointer;
   }
 }
 </style>
