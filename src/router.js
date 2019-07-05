@@ -4,6 +4,12 @@ import Home from "./views/Home.vue";
 import index from "./views/index.vue";
 import form from "./views/form.vue";
 import TableHover from "./views/TableHover.vue";
+import pagination from "./views/pagination";
+import observable1 from "./views/observable基本用法";
+import observableTable from "./views/tab切换表格实现-observable";
+import $setTable from "./views/tab切换表格实现-$set";
+import $forceUpdateTable from "./views/tab切换表格实现-$forceUpdate";
+import hardTable from "./views/tab切换表格实现-捉急实现";
 
 Vue.use(Router);
 
@@ -21,6 +27,30 @@ export default new Router({
     {
       path: "/table-hover",
       component: TableHover
+    },
+    {
+      path: "/pagination",
+      component: pagination
+    },
+    {
+      path: "/observable基本用法",
+      component: observable1
+    },
+    {
+      path: "/tab切换表格实现-observable",
+      component: observableTable
+    },
+    {
+      path: "/tab切换表格实现-$set",
+      component: $setTable
+    },
+    {
+      path: "/tab切换表格实现-$forceUpdate",
+      component: $forceUpdateTable
+    },
+    {
+      path: "/tab切换表格实现-捉急实现",
+      component: hardTable
     },
     {
       path: "/form",
