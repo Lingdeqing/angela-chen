@@ -14,7 +14,7 @@
 
     <component
       ref="dialog"
-      v-if="dialog.component"
+      v-if="dialog.component && user"
       :is="dialog.component"
       v-bind="dialog.props"
       :user="user"
@@ -46,7 +46,7 @@ export default {
         component: null,
         props: null
       },
-      user: "abc",
+      user: null,
       items: [
         {
           icon: "person",
@@ -115,7 +115,18 @@ export default {
       ]
     };
   },
+  created() {
+    this.getLogin();
+  },
   methods: {
+    getLogin() {
+      setTimeout(() => {
+        this.user = {
+          name: "yaolin",
+          age: 25
+        };
+      }, 1000);
+    },
     openDialog(item) {
       this.dialog = {
         component: item.component,
