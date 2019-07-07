@@ -10,6 +10,7 @@ import observableTable from "./views/tab切换表格实现-observable";
 import $setTable from "./views/tab切换表格实现-$set";
 import $forceUpdateTable from "./views/tab切换表格实现-$forceUpdate";
 import hardTable from "./views/tab切换表格实现-捉急实现";
+import select from "./views/select";
 
 Vue.use(Router);
 
@@ -55,6 +56,10 @@ export default new Router({
     {
       path: "/form",
       component: form
+    },
+    {
+      path: "/select",
+      component: select
     },
     {
       path: "/about",
