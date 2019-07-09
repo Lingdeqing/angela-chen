@@ -11,6 +11,7 @@ import $setTable from "./views/tab切换表格实现-$set";
 import $forceUpdateTable from "./views/tab切换表格实现-$forceUpdate";
 import hardTable from "./views/tab切换表格实现-捉急实现";
 import select from "./views/select";
+import watch from "./views/修改数组";
 
 Vue.use(Router);
 
@@ -60,6 +61,11 @@ export default new Router({
     {
       path: "/select",
       component: select
+    },
+    {
+      path: "/修改数组",
+      name: "watch",
+      component: watch
     },
     {
       path: "/about",
